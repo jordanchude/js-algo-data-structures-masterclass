@@ -46,8 +46,22 @@
 // ENDFUNCTION
 
 // Example
-function binarySearch(){
-    // add whatever parameters you deem necessary - good luck!
+function binarySearch(arr, val){
+    var left = 0;
+    var right = arr.length - 1;
+
+    while (left < right) {
+        var middle = Math.floor(left + (right - left)/2)
+        
+        if (middle == val) {
+            return middle;
+        } else if (val < middle) {
+            right = middle;
+        } else {
+            left = middle;
+        }
+    }
+    return -1;
 }
 
 // test cases

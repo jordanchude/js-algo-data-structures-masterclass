@@ -27,7 +27,7 @@
 // Linear search Big O: O(1) (best), O(n) (average), O(n) (worst)
 
 // BINARY SEARCH
-//Psuedocode
+// Psuedocode
 // FUNCTION accepts sorted array and value 
 //     VARIABLE left equals 0
 //     VARIABLE right equals end of array
@@ -44,3 +44,13 @@
 //     ENDWHILE
 //     RETURN -1
 // ENDFUNCTION
+
+// Example
+function binarySearch(){
+    // add whatever parameters you deem necessary - good luck!
+}
+
+// test cases
+console.log(binarySearch([1, 2, 3, 4, 5], 2))
+console.log(binarySearch([1, 2, 3, 4, 5], 3))
+console.log(binarySearch([1, 2, 3, 4, 5], 6))

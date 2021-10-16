@@ -53,12 +53,12 @@ function binarySearch(arr, val){
     while (left < right) {
         var middle = Math.floor(left + (right - left)/2)
         
-        if (middle == val) {
+        if (arr[middle] === val) {
             return middle;
-        } else if (val < middle) {
-            right = middle;
+        } else if (arr[middle] > val) {
+            right = middle - 1;
         } else {
-            left = middle;
+            left = middle + 1;
         }
     }
     return -1;
